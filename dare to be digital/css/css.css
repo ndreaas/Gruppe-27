@@ -7,7 +7,7 @@ body {
 
 @font-face {
 	font-family: Hovedfont;
-	src: url(../fonter/a_avenir-lt-std-85-heavy.otf) format("opentype");
+	src: url(../fonter/MavenProLight-300.otf) format("opentype");
 }
 
 #wrap {			/*Holder alt til samme lengde*/
@@ -88,11 +88,18 @@ h1{
 	margin-top:-30px;
 }
 
-#main p { 		/*Kontrollerer tekstområdet i hovedområdet*/
+#mainText { 		/*Kontrollerer tekstområdet i hovedområdet*/
 	margin-top:30px;
 	margin-left:35px;
-	width:340px;
+	width:395px;
+	height:525px;
 	float:left;
+	font-family:"Hovedfont";
+}
+
+#mainText a, a:hover, a:active, a:visited{
+	text-decoration:underline;
+	color:black;
 }
 
 #mainPictures { /*Kontrollerer bildeboksen i hovedområdet*/
@@ -103,6 +110,15 @@ h1{
 	float:right;
 	position:relative;
 	background-color:#243b5a;
+	overflow:scroll;
+}
+
+#mainPictures p, h1, img {
+	margin-left:20px;
+	padding-top:20px;
+	margin-right:20px;
+	color:white;
+	font-family:"Hovedfont";
 }
 
 #footer { 
@@ -123,3 +139,7 @@ h1{
 p {
 	margin:0px;
 }
+
+/*iframe{
+	border-top:black, 1px, solid;
+}*/
