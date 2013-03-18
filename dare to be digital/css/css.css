@@ -22,26 +22,18 @@ body {
 }
 
 #login {		/*Loginområdet*/
-	width:340px;
+	width:318px;
 	height:30px;
-	background-color:#243b5a;
-	color:white;
 	float:right;
-	top:0px;
+	top:4px;
 	font-family:"Hovedfont";
-	/*-moz-border-radius-bottomleft: 15px;
-	border-bottom-left-radius: 15px;
-	-moz-border-radius-bottomright: 15px;
-	border-bottom-right-radius: 15px;*/
 }
 
-#loginLoc {
-	width:340px;
-	height:28px;
-	float:left;
-	margin-left:4px;
-	margin:auto;
+#login a, a:hover, a:active, a:visited{
+	text-decoration:underline;
+	right:0px;
 }
+
 
 #menu {			/*Menyen*/
 	width:800px;
