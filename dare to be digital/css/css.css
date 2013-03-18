@@ -37,16 +37,6 @@ form {
 	margin:auto;
 }
 
-/*#search {		/*Søkefeltområdet
-	width:150px;
-	height:28px;
-	background-color:white;
-	float:right;
-	top:0px;
-	-moz-border-radius-bottomright: 15px;
-	border-bottom-right-radius: 15px;
-}*/
-
 #menu {			/*Menyen*/
 	width:800px;
 	height:50px;
@@ -56,6 +46,16 @@ form {
 	position:absolute;
 	z-index:9999;
 	background-color:#ffae00;
+}
+
+#menuUnder{
+	width:800px;
+	height:30px;
+	background-image:url(../img/bacl.png);
+	background-repeat:no-repeat;
+	margin-top:49px;
+	position:relative;
+	z-index:-1;
 }
 
 #main {			/*Kontrollerer hovedområdet*/
