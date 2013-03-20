@@ -36,9 +36,13 @@ body {
 	font-family:"Hovedfont";
 }
 
-#login a, a:hover, a:active, a:visited{
+#login a, a:visited, a:hover, a:active{
 	text-decoration:underline;
 	right:0px;
+	font-size:0.875em; 
+	float:right; 
+	margin-top:10px; 
+	color:white;
 }
 
 
@@ -49,7 +53,7 @@ body {
 	-moz-box-shadow: 0 8px 6px -6px #353535;
 	box-shadow: 0 8px 6px -6px #353535;
 	position:absolute;
-	z-index:9999;
+	/*z-index:2;*/
 	background-image:url(../img/meny.png);
 	background-repeat:repeat-x;
 	margin-top:-11px;
@@ -147,3 +151,49 @@ p {
 	margin:0px;
 }
 
+#register {
+	font-family:"Hovedfont";
+	background:#fff;
+	margin:auto;
+	position:absolute;
+	width:500px;
+	margin-left:150px;
+	top:-500px;
+	border-radius:5px;
+	/*z-index:9999;*/
+	box-shadow:0 3px 7px rgba(0,0,0,.25);
+	-moz-box-shadow:0 3px 7px rgba(0,0,0,.25);
+	-webkit-box-shadow:0 3px 7px rgba(0,0,0,.25);
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+	/* Make the modal appear when targeted */
+	#register:target {
+		top:100px;
+		transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+	}
+#register header,#register footer {
+	background:#477680;
+	border-bottom: 1px solid #e7e7e7;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+}
+	#register footer {
+		border:none;
+		border-top: 1px solid #e7e7e7;
+		border-radius: 0 0 5px 5px;
+		-moz-border-radius: 0 0 5px 5px;
+		-webkit-border-radius: 0 0 5px 5px;
+	}
+#register section,#register header, #register footer {
+	padding:15px;
+	z-index:200;
+}
+#register h2 {
+	margin:0;
+	color:white;
+}
