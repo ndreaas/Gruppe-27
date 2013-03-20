@@ -2,7 +2,7 @@
 
 body {
 	margin:0px;
-	background-color:#152235;
+	background-color:#32303a;
 }
 
 @font-face {
@@ -13,12 +13,19 @@ body {
 #wrap {			/*Holder alt til samme lengde*/
 	width:800px;
 	margin:auto;
+	margin-top:-200px;
 }
 
 #header {		/*Øverste område som kan sørge for repeat-x bak header*/
+	height:200px;
+	background-image:url(../img/headerback.png);
+	background-repeat:repeat-x;
+}
+
+#headerLogo {
 	width:800px;
 	height:200px;
-	background-color:#152235;
+	background-image:url(../img/logo.png);
 }
 
 #login {		/*Loginområdet*/
@@ -84,7 +91,7 @@ h1{
 	width:750px;
 	height:600px;
 	margin:auto;
-	background-color:#e2e2e2;
+	background-color:white;
 	margin-top:-30px;
 }
 
@@ -109,7 +116,7 @@ h1{
 	margin-right:35px;
 	float:right;
 	position:relative;
-	background-color:#243b5a;
+	background-color:#477680;
 	overflow:scroll;
 }
 
@@ -125,7 +132,7 @@ h1{
 	width:750px;
 	height:35px;
 	margin:auto;
-	background-color:#243b5a;
+	background-color:#477680;
 	margin-bottom:30px;
 	text-align:center;
 	color:white;
@@ -140,6 +147,3 @@ p {
 	margin:0px;
 }
 
-/*iframe{
-	border-top:black, 1px, solid;
-}*/
