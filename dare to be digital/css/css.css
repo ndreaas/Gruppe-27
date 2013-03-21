@@ -5,6 +5,11 @@ body {
 	background-color:#32303a;
 }
 
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+
 @font-face {
 	font-family: Hovedfont;
 	src: url(../fonter/MavenProLight-300.otf) format("opentype");
@@ -36,7 +41,7 @@ body {
 	font-family:"Hovedfont";
 }
 
-#login a, a:visited, a:hover, a:active{
+#login a, #login a:visited, #login a:hover, #login a:active{
 	text-decoration:underline;
 	margin-right:0px;
 	font-size:0.875em; 
@@ -65,7 +70,7 @@ body {
 	margin-top:7px;
 }
 
-#menu a, a:hover, a:active, a:visited{
+#menu a, #menu a:hover, #menu a:active, #menu a:visited{
 	font-size:30px;
 	color:white;
 	margin-left:25px;
@@ -124,7 +129,7 @@ h1{
 	font-family:"Hovedfont";
 }
 
-#mainText a, a:hover, a:active, a:visited{
+#mainText a, #mainText a:hover, #mainText a:active, #mainText a:visited{
 	text-decoration:underline;
 	color:black;
 }
