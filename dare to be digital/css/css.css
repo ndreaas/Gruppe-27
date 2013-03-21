@@ -34,11 +34,20 @@ body {
 }
 
 #login {		/*Loginområdet*/
-	width:318px;
+	width:380px;
 	height:30px;
 	float:right;
 	top:4px;
 	font-family:"Hovedfont";
+}
+
+#login form{
+	float:right;
+}
+
+#login input[type=text]
+			[type=password]{
+	width:120px;
 }
 
 #login a, #login a:visited, #login a:hover, #login a:active{
@@ -113,6 +122,10 @@ h1{
 	margin-bottom:30px;
 	margin-top:30px;
 	font-family:"Hovedfont";
+}
+
+#mainFull input[type=text]{
+	width:250px;
 }
 
 #mainFull img{
