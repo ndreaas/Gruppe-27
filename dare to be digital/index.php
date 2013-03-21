@@ -13,6 +13,16 @@
 
 <body>
 <?php include 'mysql_connect.php'; ?>
+<?php 
+	$query = "insert into TABELLNAVN
+	(navn, etternavn, kallenavn, tlfnr, email, passord)
+	values($_POST['navn'], $_POST['etternavn'], $_POST['kallenavn'], $_POST['tlfnr'], $_POST['email'], $_POST['passord'])";
+?>
+<?php
+	
+	
+	
+?>
 		<div id="header">
         </div>
 	<div id="wrap">
@@ -62,7 +72,7 @@
 			<h2>Register form</h2>
 		</header>
 		<section>
-			<form action="register" method="post">
+			<form action="register.php" method="post">
             <p>First name</p>
             <input type="text" name="firstName" /><br />
             <p>Last name</p>
