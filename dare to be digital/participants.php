@@ -18,7 +18,7 @@
 	<div id="wrap">
     	<div id="headerLogo">
         <div id="login">
-            	<form action="demo_form.asp" style="margin-top:5px;">
+            	<form action="login.php" style="margin-top:5px;">
   				<input type="text" name="username" placeholder="Username">
   				<input type="password" name="password" placeholder="Password">
   				<input type="submit" value="Login">
@@ -28,10 +28,10 @@
         </div>
         <div id="menu">
         	<div id="menuLoc">
-        		<a href="index.html" alt="Hjem">Home</a>
-            	<a href="info.html" alt="Info">Info</a>
-            	<a href="winner.html" alt="Picking a winner">Picking a winner</a>
-            	<a href="participants.html" alt="Find Participants">Find participants</a>
+        		<a href="index.php" alt="Hjem">Home</a>
+            	<a href="info.php" alt="Info">Info</a>
+            	<a href="winner.php" alt="Picking a winner">Picking a winner</a>
+            	<a href="participants.php" alt="Find Participants">Find participants</a>
             </div>
         </div>
         	<div id="menuUnder">
@@ -55,18 +55,20 @@
 			<h2>Register form</h2>
 		</header>
 		<section>
-			<form action="register">
+			<form action="register.php" method="post">
             <p>First name</p>
-            <input type="text" name="firstName"><br />
+            <input type="text" name="firstName" /><br />
             <p>Last name</p>
-            <input type="text" name="lastName"><br /><br />
+            <input type="text" name="lastName" /><br /><br />
+            <p>Phone</p>
+            <input type="text" name="tlf" /><br /><br />
             <p>Username</p>
-            <input type"text" name="createUsername"><br />
+            <input type"text" name="createUsername" /><br />
             <p>Password</p>
-            <input type="text" name="createPassword"><br /><br />
+            <input type="text" name="createPassword" /><br /><br />
             <p>Email</p>
-            <input type="text" name="email"><br /><br />
-            <input type="submit" value="Register">
+            <input type="text" name="email" /><br /><br />
+            <input type="submit" value="Register" />
             </form>
 		</section>
 		<footer class="cf">

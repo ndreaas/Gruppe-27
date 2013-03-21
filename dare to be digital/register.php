@@ -12,8 +12,16 @@
 </head>
 
 <body>
-<?php include 'mysql_connect.php'; ?>
+<?php
 
+include 'mysql_connect.php';
+
+$query = "insert into users
+	(user_name, user_lastname, user_nickname, user_tlf, user_email, user_passphrase)
+	values($_POST['firstName'], $_POST['lastName'], $_POST['createUsername'], $_POST['tlf'], $_POST['email'], $_POST['createPassword'])";
+
+
+?>
 		<div id="header">
         </div>
 	<div id="wrap">
@@ -39,6 +47,7 @@
         	</div>
 		
         <div id="main">
+	<?php if(mysql_query($query)) { echo 'Bruker registrert!'; } else { echo 'Det skjedde en feil under registreringen!'; } echo mysql_error(); ?>
             <div id="mainPictures">
             	<p style="font-size:29px; margin-left:2px;">PREVIOUS WINNERS</p>
             	<iframe src="gallery/gallery1.html" frameborder="0" width="260" height="575" scrolling="no" name"gallery" id="gallery">

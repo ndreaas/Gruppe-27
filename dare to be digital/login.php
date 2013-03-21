@@ -12,8 +12,16 @@
 </head>
 
 <body>
-<?php include 'mysql_connect.php'; ?>
+<?php
 
+include 'mysql_connect.php';
+
+$query = "select * from users where user_nickname = $_POST['username'] and user_passphrase = $_POST['password']";
+
+$num = mysql_num_rows(mysql_query($query));
+
+
+?>
 		<div id="header">
         </div>
 	<div id="wrap">
@@ -39,6 +47,7 @@
         	</div>
 		
         <div id="main">
+	<?php if($num > 0) { echo '<p>Du er logget inn</p>'; } else { echo '<p>Feil brukernavn eller passord'; } ?>
             <div id="mainPictures">
             	<p style="font-size:29px; margin-left:2px;">PREVIOUS WINNERS</p>
             	<iframe src="gallery/gallery1.html" frameborder="0" width="260" height="575" scrolling="no" name"gallery" id="gallery">
