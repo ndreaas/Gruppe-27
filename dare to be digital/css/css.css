@@ -38,11 +38,12 @@ body {
 
 #login a, a:visited, a:hover, a:active{
 	text-decoration:underline;
-	right:0px;
+	margin-right:0px;
 	font-size:0.875em; 
 	float:right; 
 	margin-top:10px; 
 	color:white;
+	font-weight: bold;
 }
 
 
